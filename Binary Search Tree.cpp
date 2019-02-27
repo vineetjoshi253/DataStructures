@@ -13,7 +13,7 @@ struct node* newNode(int key)
 {
 	struct node *temp=(struct node*)malloc(sizeof(struct node));
 	
-	//		KEY <------temp
+	//	    KEY <------temp
 	//	   -   -
 	//	  -     -
 	//	NULL    NULL
@@ -139,13 +139,13 @@ int main()
 {
     struct node *root=NULL;
     
-	//			 50
-    //		   -    -
-	//		  -		 -
-	//		30		 70
-	//     -  -     -  -
-	//    -    -   -    -
-	//   20    40 60    80  
+	//		50
+    	//	      -     -
+	//           -	      -
+	//	   30	        70
+	//        -  -         -  -
+	//    	 -    -	      -    -
+	//      20    40     60    80  
 					
 	int nodes[]={50,30,20,40,70,60,80};
 	for(int i=0;i<7;i++)
