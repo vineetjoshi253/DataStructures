@@ -49,7 +49,7 @@ struct node* insert(struct node* root,int key)
 	return root;
 }
 
-//Function to print inorder traversal of the tree.Change the order of recursive calls, to print post and preorder.
+//Function to print inorder traversal of the tree.
 void inorder(struct node *root)
 {
 	if(root!=NULL)
@@ -59,6 +59,30 @@ void inorder(struct node *root)
 		inorder(root->right);	
 	}	
 }
+
+//Function to print preorder traversal of the tree.
+void preorder(struct node *root)
+{
+	if(root!=NULL)
+	{
+		cout<<root->key<<" ";
+		preorder(root->left);
+		preorder(root->right);	
+	}	
+}
+
+//Function to print postorder traversal of the tree.
+void postorder(struct node *root)
+{
+	if(root!=NULL)
+	{
+		preorder(root->left);
+		preorder(root->right);
+		cout<<root->key<<" ";
+	}	
+}
+
+
 
 //Function to search a key.
 struct node* search(struct node*root,int temp)
